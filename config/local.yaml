@@ -1,0 +1,15 @@
+env: "local"
+migrations:
+  path: "./migrations/init.sql"
+auth:
+  link_ttl: 30m
+  token_ttl: 30m
+http_server:
+  address: "localhost:8082"
+  timeout: 4s
+  idle_timeout: 60s
+  secret_key: "your_secret_key"
+email_sender:
+  api_key: "your_api_key"
+  name: "your_name"
+  email: "your_email"
